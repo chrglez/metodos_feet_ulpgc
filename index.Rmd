@@ -173,7 +173,7 @@ class:  inverse, center, middle
 
 # Evaluación
 
-```{r, echo=FALSE, fig.width = 14, fig.height = 4}
+```{r, echo=FALSE, meesage = F,  fig.width = 14, fig.height = 4}
 library(timevis)
 data <- data.frame(
   id      = 1:4,
