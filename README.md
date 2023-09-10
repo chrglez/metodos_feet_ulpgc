@@ -1,7 +1,8 @@
-# Métodos Cuantitativos
-##  :1234: Matrices determinantes y vectores 
+# Métodos Cuantitativos [:hourglass_flowing_sand: Curso 23/24] [:teacher: Grupo 1 y DG:]
 
-## :teacher: Curso 23/24 Grupo 1 y DG:
+:1234: Matrices determinantes y vectores
+
+
 
 ## :writing_hand: Descripción del curso:
 
@@ -26,7 +27,7 @@ En el **Tema 1** nos centraremos en la primera de las tres partes introduciendo 
 
 ## :calendar: Presentación y Tema 1 del curso
 
-0. Presentación [:link:](https://raw.githack.com/chrglez/metodos_presentacion/master/index.html#1)~[:page_facing_up:]()
+0. Presentación [:link: Web](https://raw.githack.com/chrglez/metodos_presentacion/master/index.html#1)~[:page_facing_up: PDF](https://github.com/chrglez/metodos_presentacion/blob/584ae8028bb211e6fb0334ca0f17bb2b18c2f59d/M%C3%A9todos%20Cuantitativos%20presentaci%C3%B3n%202324.pdf)
 
 
 
