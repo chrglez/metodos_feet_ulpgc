@@ -2,9 +2,10 @@
 title: "Métodos Cuantitativos"
 subtitle: "Presentación"
 author: "Christian González"
-date: "Curso 19/20"
+date: "Curso 22/23"
 output:
   xaringan::moon_reader:
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
     lib_dir: libs
     css: ["rutgers", "rutgers-fonts", "./custom.css"]
     nature:
@@ -21,9 +22,9 @@ output:
 
 class:  middle
 
-* **Asignatura** 40511 - MÉTODOS CUANTITATIVOS
+* **Asignatura** 40511 - [MÉTODOS CUANTITATIVOS](https://www2.ulpgc.es/plan-estudio/4005/40/40511)
 
-* **Departamento** Métodos Cuantitativos en Economía y Gestión
+* **Departamento** [Métodos Cuantitativos en Economía y Gestión](https://dmc.ulpgc.es/)
 
 * **Módulo** Métodos Cuantitativos para la Empresa
 
@@ -34,33 +35,31 @@ class:  middle
 ---
 class:  middle
 
-# Profesorado
+#  Profesorado
 
-* **Grupo 1** Rafael Suárez Vega. José Ángel Gil Jurado. [Patricia Barber Pérez]
+* **Grupo 1** [Christian González Martel](https://dmc.ulpgc.es/cristian-gonzalez.html), [Margarita Tejera Gil](https://dmc.ulpgc.es/margarita-tejera.html).
 
-* **Grupo 2** Emilio Gómez Déniz. Isabel Tocino Viedma.
+* **Grupo 2** [Rafael Suárez Vega](https://dmc.ulpgc.es/rafael-suarez.html), [Margarita Tejera Gil](https://dmc.ulpgc.es/margarita-tejera.html). 
 
-* **Grupo 3** Christian González Martel. Isabel Tocino Viedma. 
+* **Grupo 3** [Pablo Dorta González](https://dmc.ulpgc.es/pablo-dorta.html), [C. Elena Rodríguez Socorro](https://dmc.ulpgc.es/celena-rodriguez.html). 
 
-* **Grupo 4** Christian González Martel. José Ángel Gil Jurado. 
+* **Grupo 4** [Nancy Dávila Cárdenes](https://dmc.ulpgc.es/nancy-davila.html), [C. Elena Rodríguez Socorro](https://dmc.ulpgc.es/celena-rodriguez.html). 
 
-* **Grupo 5** Pablo Dorta González. Elena Rodríguez Socorro. 
-
-* **Grupo DG** Christian González Martel. Margarita Tejera Gil.
+* **Grupo DG** [Christian González Martel](https://dmc.ulpgc.es/cristian-gonzalez.html), [Enrique Calderín Ojeda](https://dmc.ulpgc.es/congresos-departamento/44:enrique-calderin.html).
 
 ---
 class:  middle
 
 
-<ru-blockquote>Christian González Martel</ru-blockquote>
+<ru-blockquote>[Christian González Martel](https://aep24.ulpgc.es/mod/url/view.php?id=203824)</ru-blockquote>
 
 .pull-left[
 |                                                                                                            |                                   |
 | :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
 | .RUred[<i class="fas fa-building"></i>] |  D-4.07 |
-| .RUred[<i class="fas fa-clock"></i>] |  Lunes de 11:00 a 12:00 |
-|  |  Miércoles de 11:00 a 13:00 |
-|  |  Viernes de 10:00 a 13:00 |
+| .RUred[<i class="fas fa-clock"></i>] |  Lunes de 10:00 a 12:00 |
+|  |  Martes de 11:00 a 13:00 |
+|  |  Viernes de 10:00 a 12:00 |
 | <a href="mailto:christian.gonzalez@ulpgc.es">.RUred[<i class="fas fa-paper-plane"></i>]</a> |  christian.gonzalez@ulpgc.es       |
 ]
 
@@ -167,34 +166,26 @@ class:  middle
 
 class:  inverse, center, middle
 
-# Sistema de evalución 
+# Sistema de evaluación 
 
 ---
+class:  middle
 
-# Evaluación
+# Fuentes de evaluación
 
-```{r, echo=FALSE, meesage = F,  fig.width = 14, fig.height = 4}
-library(timevis)
-data <- data.frame(
-  id      = 1:4,
-  content = c("<table><tbody><tr><td>Primera prueba (<span style = 'color: red;font-weight: bold;'>EC1</span>) </td><td>09(11)/10/2019</td></tr><td> <em>30ptos;</em></td><td>Cuestiones Tema 1</td></tr></tbody></table>",
-              "<table><tbody><tr><td>Segunda prueba (<span style = 'color: red;font-weight: bold;'>EC2</span>) </td><td>18/11/2019</td></tr><td> <em>10ptos;</em></td><td>Prueba práctica PSPP. Temas 2, 3 y 4 (Inferencia)</td></tr></tbody></table>",
-              "<table><tbody><tr><td>Tercera prueba (<span style = 'color: red;font-weight: bold;'>EC3</span>) </td><td>16/12/2019</td></tr><td> <em>10ptos;</em></td><td>Prueba práctica PSPP. Temas 5, 6 (Regresión)</td></tr></tbody></table>",
-              "<table><tbody><tr><td>Examen Final (<span style = 'color: red;font-weight: bold;'>EF</span>) </td><td>28/01/2020</td></tr><td> <em>50ptos;</em></td><td>Ejercicios sobre los contenidos de la asignatura</td></tr></tbody></table>"),
-  start   = c("2019-10-09", "2019-11-18", "2019-12-16", "2020-01-28"),
-  end     = c(NA          ,           NA, NA, NA),
-  group = c(rep('EC', 3), 'EF')
-)
+.pull-left[
+- **Evaluación continua .blue[[EC1]]** 25%
 
-groups <- data.frame(
-  id = c("EC", "EF"),
-  content = c("Evaluación cont.", "Examen Final")
-)
+    - *Semana del 9-13 octubre*
+]
 
-timevis(data,groups)
-```
+.pull-right[
+- **Examen Final**
 
+    - Tema 1 [E1] (opcional) 25%
+    - Tema 2-6 [E2] 75%
 
+]
 
 ---
 class:  middle
@@ -202,24 +193,11 @@ class:  middle
 # Criterios de clasificación
 
 
-- Si en el Examen Final (**EF**)  se alcanza una nota **MAYOR O IGUAL** que **20 ptos.** entonces la **NOTA FINAL DE LA ASIGNATURA** será la suma de las calificaciones del examen final y la evaluación continua.
+$$\text{Nota Final} = 0.25 * \color{blue}{\text{EC1~E1}} + 0.75 * [\text{E2}]$$.
 
-- Si en el Examen Final (**EF**)  se alcanza una nota **MENOR** que **20 ptos.** entonces la **NOTA FINAL DE LA ASIGNATURA** será de SUSPENSO con un máximo de 4.5 ptos. independientemente de la calificación obtenida en la evaluación continua
+- En el examen final se puede renunciar a la nota de la .blue[EC1] y volverse a examinar. La calificación obtenida sustituirá a cualquier otra clasificación obtenida de esta parte con anterioridad.
 
----
-class:  middle
-
-## Consideraciones
-
-- Los alumnos podrán repetir la **EVALUACIÓN DEL TEMA 1** realizando una prueba correspondiente a ese tema en el examen final en las convocatorias ORDINARIA, EXTRAORDINARIA y ESPECIAL. En  ese  caso,  la  calificación  obtenida  sustituiría  a  cualquier otra calificación obtenida de esta parte con anterioridad.
-
-
-- En las *Convocatorias  Extraordinaria y Especial* se podrá renunciar a las notas  de las pruebas EC2 y EC3 y volver a examinarse de las mismas
-
-<!-- - De acuerdo al art. 19 del Reglamento Evaluación Aprendizaje, los estudiantes que obtuvieron en el curso 16/17 una calificación superior a *5 sobre 10 en EC1 y 10 sobre 20 en la suma de EC2 y EC3*, podrán validar dichas pruebas los cursos 17/18 y 18/19 -->
-
-<!-- - Asimismo, quienes hayan obtenido en el curso 17/18 una calificación superior a *5 sobre 10 en EC1 y 10 sobre 20 en la suma de EC2 y EC3*, podrán validar dichas pruebas durante los cursos 18/19 y 19/20 -->
-
+- Para **superar** esta asignatura hay que alcanzar una **Nota Final** minima de **5** sobre 10.
 ---
 class:  middle
 
@@ -238,7 +216,7 @@ class:  middle
 
 ---
 class: middle
-background-image: url("/img/logo.png")
+background-image: url("img/logo.png")
 background-size: 255px
 background-position: 9% 15%
 

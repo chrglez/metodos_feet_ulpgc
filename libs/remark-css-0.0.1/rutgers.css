@@ -66,7 +66,7 @@ a, a > code {
   width: 45%;
 }
 
-.pull-right ~ * {
+.pull-right + * {
   clear: both;
 }
 
@@ -127,7 +127,6 @@ thead, tfoot, tr:nth-child(even) { background: none; }
   padding-top: 250px;
   font-weight: normal;
   font-size: 45px;
-  line-height: 0.05;
   text-align: left;
   text-shadow: none;
   padding-bottom: 18px;
@@ -156,7 +155,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
   line-height: 1;
 }
 
-/* Remove slide count */
+/* Remove slide count shadow */
 .title-slide .remark-slide-number {
   text-shadow: none;
 }
